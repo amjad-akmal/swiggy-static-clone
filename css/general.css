@@ -1,0 +1,113 @@
+/*  
+  ---01 Typography system
+  -font sizes(px):
+  14 / 15 / 16 / 18 / 20 / 40 /
+
+  -font weight:
+  300 / 400 / 500 / 600 / 700
+
+  -line height:
+  16 / 18 / 19 / 20 / 24 / 40 / 48
+
+  -letter spacing:
+  normal / -.6 / -.4 / -.3 / -.2 
+
+  ---02 colors
+  -black:#000
+
+  -greys:
+  #313547 
+  #808080
+  #9395ab
+  #a9abb2
+  #aca6ad
+  #b1abb2
+  #bebfc5
+  #93959f
+
+  -orange:#fc8019
+
+  -white: #fff
+
+  -brown:#2b1e16
+
+
+*/
+
+:root {
+  --color-orange: #fc8019;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-grey-1: #686b78;
+  --color-grey-2: #bebfc5;
+  --color-grey-3: #a9abb2;
+  --color-grey-4: #808080;
+  --color-brown: #2b1e16;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* making default font size to 10 so that its easier to use rem values */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "outfit", sans-serif;
+}
+
+/* ************** */
+/* GENERAL STYLES */
+/* ************** */
+
+.heading-secondary {
+  font-size: 4rem;
+  font-weight: 600;
+  letter-spacing: -0.4;
+  line-height: 4.8rem;
+  margin-top: 5rem;
+}
+
+.heading-teritiary {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.4rem;
+  margin-top: 3rem;
+}
+
+.btn {
+  transition: all 0.2s;
+  cursor: pointer;
+  padding: 1.2rem 2.8rem;
+  border: none;
+  border-radius: 0;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.heading-undertext {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 4rem;
+  letter-spacing: -0.3;
+  color: var(--color-grey-1);
+}
+
+.heading-quaternary {
+  color: #949494;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.hr {
+  border: 1px solid #2e2e2e;
+}
